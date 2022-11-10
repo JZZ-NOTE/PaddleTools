@@ -1,0 +1,3 @@
+FROM registry.baidubce.com/paddlepaddle/paddle:base-gpu-cuda11.2-cudnn8
+COPY install_trt.sh /
+RUN /bin/bash /install_trt.sh trt8034

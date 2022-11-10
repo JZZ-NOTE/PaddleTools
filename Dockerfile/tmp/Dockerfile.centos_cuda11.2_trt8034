@@ -1,0 +1,3 @@
+FROM paddlepaddle/paddle_manylinux_devel:cuda11.2.1-cudnn8-py310
+COPY install_trt.sh /
+RUN /bin/bash install_trt.sh trt8034
