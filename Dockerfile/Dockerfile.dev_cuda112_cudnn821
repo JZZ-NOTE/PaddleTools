@@ -1,0 +1,6 @@
+FROM paddlepaddle/paddle:latest-dev-cuda11.2-cudnn8-gcc82
+COPY remove_cudnn811.sh /
+RUN /bin/bash /remove_cudnn811.sh
+COPY install_cudnn821.sh /
+RUN /bin/bash /install_cudnn821.sh
+
